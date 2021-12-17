@@ -13,9 +13,7 @@
 		0E0A8505276CEED40009B449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0A8503276CEED40009B449 /* Main.storyboard */; };
 		0E0A8507276CEED60009B449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E0A8506276CEED60009B449 /* Assets.xcassets */; };
 		0E0A850A276CEED60009B449 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0A8508276CEED60009B449 /* LaunchScreen.storyboard */; };
-		0E0A8515276CEED60009B449 /* CryptoChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A8514276CEED60009B449 /* CryptoChatTests.swift */; };
-		0E0A851F276CEED60009B449 /* CryptoChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A851E276CEED60009B449 /* CryptoChatUITests.swift */; };
-		0E0A8521276CEED60009B449 /* CryptoChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A8520276CEED60009B449 /* CryptoChatUITestsLaunchTests.swift */; };
+		0E0A852E276CF3CE0009B449 /* Jalnan.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E0A852D276CF3CE0009B449 /* Jalnan.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +43,8 @@
 		0E0A8509276CEED60009B449 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E0A850B276CEED60009B449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E0A8510276CEED60009B449 /* CryptoChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E0A8514276CEED60009B449 /* CryptoChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoChatTests.swift; sourceTree = "<group>"; };
 		0E0A851A276CEED60009B449 /* CryptoChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E0A851E276CEED60009B449 /* CryptoChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoChatUITests.swift; sourceTree = "<group>"; };
-		0E0A8520276CEED60009B449 /* CryptoChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0E0A852D276CF3CE0009B449 /* Jalnan.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Jalnan.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				0E0A84FC276CEED40009B449 /* CryptoChat */,
-				0E0A8513276CEED60009B449 /* CryptoChatTests */,
-				0E0A851D276CEED60009B449 /* CryptoChatUITests */,
 				0E0A84FB276CEED40009B449 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,6 +93,7 @@
 		0E0A84FC276CEED40009B449 /* CryptoChat */ = {
 			isa = PBXGroup;
 			children = (
+				0E0A852F276CF3D90009B449 /* font */,
 				0E0A84FD276CEED40009B449 /* AppDelegate.swift */,
 				0E0A84FF276CEED40009B449 /* SceneDelegate.swift */,
 				0E0A8501276CEED40009B449 /* ViewController.swift */,
@@ -110,21 +105,12 @@
 			path = CryptoChat;
 			sourceTree = "<group>";
 		};
-		0E0A8513276CEED60009B449 /* CryptoChatTests */ = {
+		0E0A852F276CF3D90009B449 /* font */ = {
 			isa = PBXGroup;
 			children = (
-				0E0A8514276CEED60009B449 /* CryptoChatTests.swift */,
+				0E0A852D276CF3CE0009B449 /* Jalnan.ttf */,
 			);
-			path = CryptoChatTests;
-			sourceTree = "<group>";
-		};
-		0E0A851D276CEED60009B449 /* CryptoChatUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0E0A851E276CEED60009B449 /* CryptoChatUITests.swift */,
-				0E0A8520276CEED60009B449 /* CryptoChatUITestsLaunchTests.swift */,
-			);
-			path = CryptoChatUITests;
+			path = font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +219,7 @@
 			files = (
 				0E0A850A276CEED60009B449 /* LaunchScreen.storyboard in Resources */,
 				0E0A8507276CEED60009B449 /* Assets.xcassets in Resources */,
+				0E0A852E276CF3CE0009B449 /* Jalnan.ttf in Resources */,
 				0E0A8505276CEED40009B449 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +255,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E0A8515276CEED60009B449 /* CryptoChatTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E0A851F276CEED60009B449 /* CryptoChatUITests.swift in Sources */,
-				0E0A8521276CEED60009B449 /* CryptoChatUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
