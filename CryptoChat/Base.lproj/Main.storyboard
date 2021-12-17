@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--DashBoard-->
         <scene sceneID="nIp-Im-EPC">
             <objects>
                 <viewController id="jK1-8e-HNk" sceneMemberID="viewController">
@@ -17,9 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="R8z-xe-W5M"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Primary"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="gnw-aw-xbg"/>
+                    <tabBarItem key="tabBarItem" title="DashBoard" image="newspaper" catalog="system" selectedImage="newspaper.fill" id="gnw-aw-xbg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jgA-u1-iWt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -32,16 +32,32 @@
                     <view key="view" contentMode="scaleToFill" id="bcZ-1D-4ea">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBg-kh-ycl">
+                                <rect key="frame" x="356" y="60" width="42" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="person.fill" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Igu-Gx-zZl"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Primary"/>
+                        <constraints>
+                            <constraint firstItem="Igu-Gx-zZl" firstAttribute="trailing" secondItem="KBg-kh-ycl" secondAttribute="trailing" constant="16" id="IaA-Wt-Tex"/>
+                            <constraint firstItem="KBg-kh-ycl" firstAttribute="top" secondItem="Igu-Gx-zZl" secondAttribute="top" constant="16" id="tKF-oe-tXV"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Rank" id="Vcb-A4-cf8">
+                    <tabBarItem key="tabBarItem" title="Rank" image="chart.bar" catalog="system" selectedImage="chart.bar.fill" id="Vcb-A4-cf8">
                         <color key="badgeColor" systemColor="tintColor"/>
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXc-v1-2Di" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="619" y="-191"/>
+            <point key="canvasLocation" x="618.84057971014499" y="-191.51785714285714"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="oxw-3Y-RQ4">
@@ -63,12 +79,21 @@
             <point key="canvasLocation" x="-272" y="120"/>
         </scene>
     </scenes>
+    <color key="tintColor" systemColor="linkColor"/>
     <resources>
+        <image name="chart.bar" catalog="system" width="128" height="90"/>
+        <image name="chart.bar.fill" catalog="system" width="128" height="92"/>
+        <image name="newspaper" catalog="system" width="128" height="111"/>
+        <image name="newspaper.fill" catalog="system" width="128" height="111"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <namedColor name="Primary">
+            <color red="0.12156862745098039" green="0.11764705882352941" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="PrimaryLight">
             <color red="0.14509803921568629" green="0.14901960784313725" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
